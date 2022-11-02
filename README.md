@@ -26,7 +26,7 @@
 <h2>🛠 Tecnologias Utilizadas</h2>
 
 <ul>
-    <li>IDE IntelliJ</li>
+    <li>IDE Eclipse</li>
     <li>Java 11</li>
     <li>Maven</li>
     <li><strong>Spring Web</strong></li>
@@ -84,20 +84,7 @@ Indica qual é o lado inverso ou não dominante da relação.
 </ul>
 
 
-<h2> 🤝 Contribuindo </h2>
 
-Este repositório foi criado para fins de estudo, então contribua com ele. Se te ajudei de alguma forma, ficarei feliz em
-saber. E caso você conheça alguém que se identidique com o conteúdo, não deixe de compatilhar.
-
-Se possível:
-
-⭐️ Star o projeto
-
-🐛 Encontrar e relatar issues
-
-------------
-
-Disponibilizado com ♥ por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la").
 
 
 
