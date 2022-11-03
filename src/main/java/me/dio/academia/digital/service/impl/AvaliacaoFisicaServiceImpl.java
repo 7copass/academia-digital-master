@@ -8,6 +8,7 @@ import me.dio.academia.digital.repository.AlunoRepository;
 import me.dio.academia.digital.repository.AvaliacaoFisicaRepository;
 import me.dio.academia.digital.service.IAvaliacaoFisicaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -35,7 +36,7 @@ public class AvaliacaoFisicaServiceImpl implements IAvaliacaoFisicaService {
 
   @Override
   public AvaliacaoFisica get(Long id) {
-    return null;
+	  return avaliacaoFisicaRepository.getById(id);
   }
 
   @Override
@@ -46,11 +47,16 @@ public class AvaliacaoFisicaServiceImpl implements IAvaliacaoFisicaService {
 
   @Override
   public AvaliacaoFisica update(Long id, AvaliacaoFisicaUpdateForm formUpdate) {
-    return null;
+	  AvaliacaoFisica avaliacaoFisica = avaliacaoFisicaRepository.getById(id);
+	  avaliacaoFisica.setAltura(formUpdate.getAltura());
+	  avaliacaoFisica.setPeso(formUpdate.getPeso());
+    return avaliacaoFisicaRepository.save(avaliacaoFisica);
   }
 
   @Override
   public void delete(Long id) {
+	  AvaliacaoFisica avaliacaoFisica = avaliacaoFisicaRepository.getById(id);
+	  avaliacaoFisicaRepository.delete(avaliacaoFisica);
 
   }
 }
